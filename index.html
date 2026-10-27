@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boddu Charantej | Software Engineer</title>
+  <meta name="description" content="Portfolio of Boddu Charantej, Software Engineer.">
+  <meta name="theme-color" content="#05060a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <noscript><p style="padding:2rem;color:#fff">Please enable JavaScript to view this portfolio.</p></noscript>
+
+  <!-- Intro animation -->
+  <div id="intro" aria-hidden="true"><div class="intro-word"></div></div>
+
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#home" class="brand" id="brand"></a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    <ul class="links" id="links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#certs">Certificates</a></li>
+      <li><a href="#contact" class="pill-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <header class="hero" id="home">
+      <div class="hero-top">
+        <div class="hero-text">
+          <p class="hello in" style="--d:.1s">Hello, I'm <b id="heroName"></b></p>
+          <p class="role in" style="--d:.25s"><span id="typed"></span><span class="caret"></span></p>
+          <p class="tagline in" style="--d:.4s" id="tagline"></p>
+          <div class="cta in" style="--d:.55s" id="cta"></div>
+        </div>
+        <div class="photo in" style="--d:.3s" id="photo"></div>
+      </div>
+      <div class="hero-bottom">
+        <h1 class="mega in" style="--d:.2s" id="heroTitle"></h1>
+        <div class="hero-row in" style="--d:.5s">
+          <p class="sub"><b id="subTitle"></b> <i id="subLoc"></i></p>
+          <a class="scroll-cue" href="#about">Scroll <span>↓</span></a>
+        </div>
+      </div>
+    </header>
+
+    <section class="section" id="about">
+      <p class="eyebrow reveal">About me</p>
+      <h2 class="reveal">A little about who I am</h2>
+      <div class="about-grid">
+        <div class="about-text reveal" id="aboutText"></div>
+        <div class="stats reveal" id="stats"></div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <p class="eyebrow reveal">Skills</p>
+      <h2 class="reveal">What I work with</h2>
+      <div class="skill-grid" id="skillGrid"></div>
+    </section>
+
+    <section class="section" id="projects">
+      <p class="eyebrow reveal">Projects</p>
+      <h2 class="reveal">Things I've built</h2>
+      <div class="project-grid" id="projectGrid"></div>
+    </section>
+
+    <section class="section" id="journey">
+      <p class="eyebrow reveal">Journey</p>
+      <h2 class="reveal">Experience &amp; education</h2>
+      <div class="journey-grid">
+        <div><h3 class="col-title reveal">Experience</h3><div class="timeline" id="expList"></div></div>
+        <div><h3 class="col-title reveal">Education</h3><div class="timeline" id="eduList"></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="certs">
+      <p class="eyebrow reveal">Certifications</p>
+      <h2 class="reveal">Always learning</h2>
+      <div class="cert-grid" id="certGrid"></div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <p class="eyebrow reveal">Contact</p>
+      <h2 class="big reveal">Let's build something together.</h2>
+      <p class="contact-sub reveal">I'm open to Software Engineer opportunities. Say hello!</p>
+      <div class="contact-links reveal" id="contactLinks"></div>
+    </section>
+  </main>
+
+  <footer class="footer"><span id="footerText"></span></footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
